@@ -1,0 +1,47 @@
+algoritmo bhaskara;
+
+variáveis
+a:real;
+b:real;
+c:real;
+x1:real;
+x2:real;
+i:inteiro;
+x:real;
+delta:real;
+
+fim-variáveis
+
+início
+
+imprima("Digite o valor de a: ");
+a:=leia();
+
+imprima("Digite o valor de b: ");
+b:=leia();
+
+imprima("Digite o valor de c: ");
+c:=leia();
+
+delta:= (b*b-(4*a*c));
+
+se delta<=0 então
+   
+        imprima("Delta negativo");
+
+        fim-se
+
+    senão
+    
+    delta=x;
+
+    x1:= (-b+x)/(2*a);
+    x2:= (-b-x)/(2*a);
+
+        imprima("A equação possui 2 raízes reais");
+        imprima("x1= ",x1);
+        imprima("x2= ",x2);
+
+    fim-se
+
+fim
